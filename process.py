@@ -1,7 +1,5 @@
-#This will allow you to exit the game!
 import pygame, sys, classes, random
 
-#PROCESSING
 def process(bug, FPS, total_frames):
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
@@ -12,7 +10,6 @@ def process(bug, FPS, total_frames):
 			if event.key == pygame.K_e:
 				classes.BugProjectile.fire = not classes.BugProjectile.fire
 
-#Keys detection are bellow!
 	keys = pygame.key.get_pressed()
 
 	if keys[pygame.K_d]:
@@ -67,8 +64,6 @@ def spawn(FPS, total_frames):
             x = 640 - 40
 
         classes.Fly(x, 130, "images/fly.png")
-
-
 
 
 def collisions():
