@@ -1,3 +1,4 @@
+# Importing relevant libraries
 import pygame, sys
 from classes import *
 from process import *
