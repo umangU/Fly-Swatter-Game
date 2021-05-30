@@ -3,6 +3,7 @@ import pygame, sys
 from classes import *
 from process import *
 
+# Display and Logic
 pygame.init()
 SCREENWIDTH, SCREENHEIGHT = 640, 360
 screen = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT), 0, 32)
